@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 20px 100px 20px 100px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar p {
+    font-size: 25px;
+}
+
+.nav__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 45px;
+}
+
+/* Remove link decoration from word */
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.social__icon {
+    width: 40px;
+    padding: 0 10px 0 10px;
+}
+
+.home-div {
+    display: flex;
+}
+
+.homeImg {
+    width: 50%;
+    min-width: 50%;
+}
+
+.homeImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.homeDesc {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 120px 0 120px;
+    gap: 80px;
+}
+
+.homeDesc p {
+    font-size: 118px;
+    font-weight: 700;
+}
+
+.homeDesc button {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px 30px 10px 30px;
+    border: 0;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0px;
+    background-color: #f8f8f8;
+}
+
+.services__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #232323;
+}
+
+.services__hr {
+    width: 100px;
+    margin: 40px 0px;
+}
+
+.services__desc {
+    padding-bottom: 40px;
+    color: #444444;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 30%;
+    padding: 20px;
+}
+
+.card-scroll {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    overflow-x: scroll;
+    gap: 50px;
+}
+
+.serviceCardIcon {
+    width: 30px;
+    color: #585858;
+}
+
+.serviceCardTitle {
+    font-size: 20px;
+    padding: 0px 20px;
+    font-weight: 400;
+}
+
+.serviceCardDesc {
+    color: #585858;
+}
+
+.features {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.featuresDesc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 150px;
+}
+
+.featuresImg {
+    width: 50%;
+}
+
+.featuresImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.features__title {
+    font-size: 58px;
+    font-weight: 600;
+    color: #232323;
+}
+
+.features__hr {
+    width: 100px;
+    margin: 40px 0px;
+}
+
+.features__desc {
+    padding-bottom: 40px;
+    color: #444444;
+}
+
+.featureIcon {
+    width: 30px;
+    color: #585858;
+}
+
+.featureTitle {
+    font-size: 26px;
+    padding: 20px 0px;
+    font-weight: 500;
+}
+
+.featureDesc {
+    color: #585858;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        transition: unset;
+        gap: 10px;
+    }
+
+    .homeImg img {
+        height: unset;
+    }
+
+    .homeDesc P {
+        font-size: 28px;
+    }
+
+    .nav__buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sticky {
+        position: unset;
+        top: unset;
+        width: unset;
+    }
+
+    .homeDesc {
+        gap: 10px;
+        padding: 0 50px;
+    }
+
+    .homeDesc button {
+        font-size: 28px;
+        padding: 5px 10px;
+    }
+
+    .featuresDesc {
+        padding: 20px 10px 0 10px;
+        align-items: center;
+    }
+
+    .features__title {
+        font-size: 38px;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        transition: unset;
+        gap: 10px;
+    }
+
+    .homeImg img {
+        height: unset;
+    }
+
+    .homeDesc P {
+        font-size: 28px;
+    }
+
+    .nav__buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sticky {
+        position: unset;
+        top: unset;
+        width: unset;
+    }
+
+    .homeDesc {
+        gap: 10px;
+        padding: 0 50px;
+    }
+
+    .homeDesc button {
+        font-size: 28px;
+        padding: 5px 10px;
+    }
+
+    .featuresDesc {
+        padding: 20px 10px 0 10px;
+        align-items: center;
+    }
+
+    .features__title {
+        font-size: 38px;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 5px 15px 5px 15px;
+        transition: unset;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar:hover .nav__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        display: unset;
+    }
+
+    .homeImg img {
+        height: unset;
+    }
+
+    .homeDesc P {
+        font-size: 14px;
+    }
+
+    .nav__buttons {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        top: 20px;
+        right: 20px;
+
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        /* gap: 10px; */
+    }
+
+    .sticky {
+        position: unset;
+        top: unset;
+        width: unset;
+    }
+
+    .homeDesc {
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .homeDesc button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .featuresDesc {
+        padding: 20px 10px 0 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .featuresImg {
+        width: 100%;
+    }
+
+    .features__title {
+        font-size: 28px;
+    }
+
+    .features__hr {
+        margin: 15px 0;
+    }
+
+    .features__desc {
+        font-size: 12px;
+    }
+
+    .featureTitle {
+        font-size: 16px;
+    }
+
+    .featureDesc {
+        font-size: 12px;
+    }
+
+    .services {
+        padding: 20px 0;;
+    }
+
+    .services__title {
+        font-size: 24px;
+    }
+
+    .services__hr {
+        margin: 15px 0;
+    }
+
+    .services__desc {
+        font-size: 18px;
+    }
+
+    .card-scroll {
+        gap: 5px;
+    }
+
+    .serviceCardTitle {
+        font-size: 14px;
+    }
+
+    .serviceCardDesc {
+        font-size: 10px;
+    }
+
+    .services__card {
+        min-width: 40%;
+    }
+}
